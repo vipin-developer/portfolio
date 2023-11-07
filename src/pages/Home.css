@@ -4,11 +4,28 @@
     align-items: center;
    
 }
-.dev-animation{
+.glowing-button {
+    background: transparent;
+    border: 2px solid transparent;
+    color: #fff; /* Set text color */
+    font-size: 16px; /* Set font size */
+    padding: 10px 20px; /* Set padding as needed */
+    outline: none; /* Remove the button outline on focus */
   
- 
-}
-
+    /* Apply the glowing border effect */
+    border-image: linear-gradient(90deg, #9970f9,#9970f9,#9970f9); /* Define the glowing border gradient colors */
+    border-image-slice: 1;
+    transition: border-image 0.5s;
+    margin-top: 5%;
+  }
+  
+  .glowing-button:hover {
+    background-color: #9970f9;
+    color: #0d121a;
+    border:#0d121a;
+    
+  }
+  
 .intro{
     width: 50%;
     padding-left: 5%;
