@@ -5,16 +5,22 @@
 }
 h1{
   font-family: 'JetBrains Mono', monospace;
+  color: #bec6df;
+  font-weight: bolder;
+  font-size: 50px;
+
 }
 h5{
   font-family: 'Calibre';
+  color: #9970f9;
 }
 h3{
 
 }
 h4{
-
+  font-family: 'Calibre';
+  color: #9970f9;
 }
 h2{
-  
+  font-size: 25px;
 }

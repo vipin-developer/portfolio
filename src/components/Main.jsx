@@ -9,19 +9,24 @@ import Contact from "../pages/Contact";
 const Main = () => {
   return (
     <div>
-      <Link to="page1" spy={true} smooth={true} offset={-70} duration={500}>
-        Home
-      </Link>
-      <Link to="page2" spy={true} smooth={true} offset={-70} duration={500}>
-        About
-      </Link>
-      <Link to="page3" spy={true} smooth={true} offset={-70} duration={500}>
-      Experience
-      </Link>
-      <Link to="page4" spy={true} smooth={true} offset={-70} duration={500}>
-      Contact
-      </Link>
-    
+      <header className="header">
+        <div className="header-right">
+          {/* Place your header items here */}
+          <Link to="page1" spy={true} smooth={true} offset={-70} duration={500}>
+            Home
+          </Link>
+          <Link to="page2" spy={true} smooth={true} offset={-70} duration={500}>
+            About
+          </Link>
+          <Link to="page3" spy={true} smooth={true} offset={-70} duration={500}>
+            Experience
+          </Link>
+          <Link to="page4" spy={true} smooth={true} offset={-70} duration={500}>
+            Contact
+          </Link>
+        </div>
+      </header>
+
       <Element name="page1">
         <Home />
       </Element>
@@ -34,7 +39,6 @@ const Main = () => {
       <Element name="page4">
         <Contact />
       </Element>
-     
     </div>
   );
 };
