@@ -1,0 +1,41 @@
+import React from "react";
+import "./Main.css";
+import { Element, Link } from "react-scroll";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Experience from "../pages/Experience";
+import Contact from "../pages/Contact";
+
+const Main = () => {
+  return (
+    <div>
+      <Link to="page1" spy={true} smooth={true} offset={-70} duration={500}>
+        Home
+      </Link>
+      <Link to="page2" spy={true} smooth={true} offset={-70} duration={500}>
+        About
+      </Link>
+      <Link to="page3" spy={true} smooth={true} offset={-70} duration={500}>
+      Experience
+      </Link>
+      <Link to="page4" spy={true} smooth={true} offset={-70} duration={500}>
+      Contact
+      </Link>
+    
+      <Element name="page1">
+        <Home />
+      </Element>
+      <Element name="page2">
+        <About />
+      </Element>
+      <Element name="page3">
+        <Experience />
+      </Element>
+      <Element name="page4">
+        <Contact />
+      </Element>
+     
+    </div>
+  );
+};
+export default Main;

@@ -1,0 +1,28 @@
+/* styles.css */
+.page {
+    height: 100vh; /* Set the height of each page to the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: background 0.5s; /* Add a smooth background transition effect */
+  }
+  
+  .home {
+   height: 100vh;
+  }
+  
+  .about {
+    height: 100vh;
+  }
+  
+  .experience {
+    height: 100vh;
+  }
+  
+  .contact {
+    height: 100vh;
+  }
+  
+
+  
