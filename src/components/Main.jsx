@@ -2,9 +2,9 @@ import React from "react";
 import "./Main.css";
 import { Element, Link } from "react-scroll";
 import Home from "../pages/Home";
-import About from "../pages/About";
 import Experience from "../pages/Experience";
 import Contact from "../pages/Contact";
+import Skills from "../pages/Skills";
 
 const Main = () => {
   return (
@@ -16,7 +16,7 @@ const Main = () => {
             Home
           </Link>
           <Link to="page2" spy={true} smooth={true} offset={-70} duration={500}>
-            About
+            Skills
           </Link>
           <Link to="page3" spy={true} smooth={true} offset={-70} duration={500}>
             Experience
@@ -31,7 +31,7 @@ const Main = () => {
         <Home />
       </Element>
       <Element name="page2">
-        <About />
+        <Skills />
       </Element>
       <Element name="page3">
         <Experience />

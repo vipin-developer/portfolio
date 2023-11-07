@@ -1,0 +1,10 @@
+.contact-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-animation{
+    margin-top: 160px;
+   
+}

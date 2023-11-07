@@ -1,0 +1,8 @@
+.skills-main {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.skill-text{
+    color: #9970f9;
+}
