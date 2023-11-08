@@ -57,6 +57,10 @@
     display: flex;
     gap: 20px; /* Adjust the gap between items as needed */
   }
+  .header-left {
+  position: absolute;
+  left: 30px;
+  }
   
   .header-right a {
     text-decoration: none;
