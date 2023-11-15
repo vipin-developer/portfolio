@@ -17,6 +17,7 @@
     border-image-slice: 1;
     transition: border-image 0.5s;
     margin-top: 5%;
+    cursor: pointer;
   }
   
   .glowing-button:hover {

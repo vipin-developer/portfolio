@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
-  faTwitter,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 function Contact(props) {
@@ -28,7 +28,7 @@ function Contact(props) {
           <FontAwesomeIcon icon={faLinkedin} size="3x" />
         </a>
         <a href="https://twitter.com/vipin_tweets" className="twitter social">
-          <FontAwesomeIcon icon={faTwitter} size="3x" />
+          <FontAwesomeIcon icon={faXTwitter} size="3x" />
         </a>
         <a href="https://github.com/vipin-developer" className="github social">
           <FontAwesomeIcon icon={faGithub} size="3x" />
