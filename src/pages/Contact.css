@@ -1,10 +1,28 @@
-.contact-main{
+.contact-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.footer-animation{
+
+.footer-animation {
     margin-top: 160px;
-   
+
+}
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+    color: white;
+}
+
+a.social:hover {
+    transform: translateY(-2px);
+}
+.heart{
+    color: red;
+}
+.dev-by{
+    margin-top: 15%;
 }

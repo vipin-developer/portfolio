@@ -1,15 +1,49 @@
-import React from 'react';
-import './Contact.css';
-import dev from '../animations/footer.json'
-import Lottie from 'lottie-react';
+import React from "react";
+import "./Contact.css";
+import dev from "../animations/footer.json";
+import Lottie from "lottie-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 function Contact(props) {
-    return (
-        <div className='contact contact-main'>
-            <h1>Need Help?</h1>
-            <button class="glowing-button">Contact Me</button>
-            <Lottie animationData={dev} className="footer-animation" loop={true} />
-        </div>
-    );
+  const handleEmailClick = () => {
+    const email = "vipinrajandcompany@gmail.com";
+    const subject = "Contacting from portfolio";
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoLink;
+  };
+  return (
+    <div className="contact contact-main">
+      <h1>Need Help?</h1>
+      <h2>Feel free to contact me on social media.</h2>
+      <div class="social-container">
+        <a
+          href="https://www.linkedin.com/in/vipin-kumar-00216a149/"
+          className="linkdin social"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="3x" />
+        </a>
+        <a href="https://twitter.com/vipin_tweets" className="twitter social">
+          <FontAwesomeIcon icon={faTwitter} size="3x" />
+        </a>
+        <a href="https://github.com/vipin-developer" className="github social">
+          <FontAwesomeIcon icon={faGithub} size="3x" />
+        </a>
+      </div>
+      <button class="glowing-button" onClick={handleEmailClick}>Contact Me</button>
+      <p className="dev-by">
+        Developed with &nbsp;
+        <FontAwesomeIcon className="heart" icon={faHeart} size="1x" /> &nbsp;by Vipin
+        Kumar
+      </p>
+
+    
+    </div>
+  );
 }
 
 export default Contact;

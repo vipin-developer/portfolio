@@ -12,26 +12,26 @@ export default function Experience() {
     {
       company: "Epam Anywhere, India",
       designation: "Senior software Engineer",
-      describe:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      date: "Aug 2023 – Present",
+      desc: "No projects assigned till now",
     },
     {
-      company: "Epam Anywhere, India",
-      designation: "Senior software Engineer",
-      describe:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      company: "Synapsica healthcare pvt ltd",
+      designation: "Software Engineer",
+      date: "Dec 2021 – Aug 2023",
+      desc: "Became proficient in react.js, node.js and mongodb. As the company is product base, implementing new in- teresting functionality rapidly. Learned new ways to solve problems.",
     },
     {
-      company: "Epam Anywhere, India",
-      designation: "Senior software Engineer",
-      describe:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      company: "ICT Group",
+      designation: "Tech Lead",
+      date: "Feb 2020 – November 2021",
+      desc: "Became proficient in angular, vue.js, node.js and mongodb. Learned and worked on microservice architec- ture,Dockers and team work. Worked on two major projects with different tech stack.",
     },
     {
-      company: "Epam Anywhere, India",
-      designation: "Senior software Engineer",
-      describe:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      company: "AdinavLabs pvt ltd",
+      designation: "Software Developer",
+      date: "July 2018 – Jan 2020",
+      desc: "Became proficient in React-native, React, Angular, node.js and mongodb. Learned and worked on agile methodology and team work. Worked on complex projects with different tech stack.",
     },
   ];
   return (
@@ -39,28 +39,27 @@ export default function Experience() {
       <h2 className="skill-text exp">My Experience</h2>
 
       <VerticalTimeline>
-        {workExp.map((item)=>{
-            return (
-                <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: "#9970f9", color: "#fff" }}
-                contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-                date="Aug 2023 - present"
-                iconStyle={{ background: "#9970f9", color: "#fff" }}
-                icon={<WorkIcon />}
-              >
-                <h2 className="vertical-timeline-element-title">
-                  Senior Software Engineer
-                </h2>
-                <h2 className="vertical-timeline-element-subtitle">
-                  Epam Systems, India
-                </h2>
-                <p>
-                  Creative Direction, User Experience, Visual Design, Project
-                  Management, Team Leading
-                </p>
-              </VerticalTimelineElement>
-            )
+        {workExp.map((item) => {
+          return (
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "#9970f9", color: "#fff" }}
+              contentArrowStyle={{
+                borderRight: "7px solid  rgb(33, 150, 243)",
+              }}
+              date={item.date}
+              iconStyle={{ background: "#9970f9", color: "#fff" }}
+              icon={<WorkIcon />}
+            >
+              <h2 className="vertical-timeline-element-title">
+                {item.designation}
+              </h2>
+              <h2 className="vertical-timeline-element-subtitle">
+                {item.company}
+              </h2>
+              <p>{item.desc}</p>
+            </VerticalTimelineElement>
+          );
         })}
       </VerticalTimeline>
     </div>
