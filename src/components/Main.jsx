@@ -10,13 +10,13 @@ const Main = () => {
   return (
     <div>
       <header className="header">
-      <div className="header-left">
+        <div className="header-left">
           {/* Place your header items here */}
           {/* <Link to="page1" spy={true} smooth={true} offset={-70} duration={500}>
            
           </Link> */}
           <h2> VIPIN KUMAR</h2>
-          </div>
+        </div>
         <div className="header-right">
           {/* Place your header items here */}
           <Link to="page1" spy={true} smooth={true} offset={-70} duration={500}>

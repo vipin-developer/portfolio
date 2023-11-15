@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react";
 import "./Home.css";
 import Lottie from "lottie-react";
 import dev from "../animations/dev.json";
+import resume from '../assets/Vipin.pdf'
 
 function Home(props) {
   const developerQuotes = [
@@ -39,7 +40,7 @@ function Home(props) {
         <h4>Hi, My Name is</h4>
         <h1>Vipin Kumar</h1>
         <h2> {currentQuote}</h2>
-        <button class="glowing-button">Download Resume</button>
+        <button class="glowing-button" onClick={()=>window.open(resume,'_blank')}>Download Resume</button>
       </div>
       <div>
         <Lottie animationData={dev} className="dev-animation" loop={true} />
