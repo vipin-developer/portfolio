@@ -13,7 +13,7 @@ export default function Experience() {
       company: "Epam Anywhere, India",
       designation: "Senior software Engineer",
       date: "Aug 2023 – Present",
-      desc: "No projects assigned till now",
+      desc: "working on a react project for a travel agency which has various user types like client, coordinator and admin each of them has different logins and based on the login different UI designs",
     },
     {
       company: "Synapsica healthcare pvt ltd",
